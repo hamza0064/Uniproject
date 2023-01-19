@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: Pos(ShoeRetail), Configuration: Debug Any CPU ------
+1>  Pos(ShoeRetail) -> D:\Hamza\Pos(ShoeRetail)\Pos(ShoeRetail)\bin\Debug\Pos(ShoeRetail).exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
