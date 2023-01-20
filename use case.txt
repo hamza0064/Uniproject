@@ -6,3 +6,8 @@ Main use cases in our project
 2)Add products
 3)Product review
 4)Update inventry
+5)Update users 
+6)Create reports
+7)Generate reports
+
+this use cases is use in our project.
