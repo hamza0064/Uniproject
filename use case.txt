@@ -1,0 +1,13 @@
+we are create pos shoes store
+
+Main use cases in our project
+
+1)Add users
+2)Add products
+3)Product review
+4)Update inventory
+5)Update users 
+6)Create reports
+7)Generate reports
+
+this use cases is use in our project.
