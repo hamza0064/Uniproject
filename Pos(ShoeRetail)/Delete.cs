@@ -8,12 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Pos_ShoeRetail_
 {
     public partial class Delete : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
+        static string conString = ConfigurationManager.ConnectionStrings["Pos_ShoeRetail_.Properties.Settings.Setting"].ConnectionString;
+        SqlConnection con = new SqlConnection(conString);
         public Delete()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace Pos_ShoeRetail_
 
         private void txt_Search_TextChanged(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
+            
 
 
             string Qry = "select * from Product where ProductID='" + txt_Search.Text + "'";
@@ -54,6 +56,7 @@ namespace Pos_ShoeRetail_
                     txt_price.Text = Price.ToString(); ;
 
                 }
+                con.Close();
 
             }
             catch (Exception ex)

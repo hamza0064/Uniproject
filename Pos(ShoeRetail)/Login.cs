@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient; 
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Pos_ShoeRetail_
 {
     public partial class Login : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
-         
+        static string conString = ConfigurationManager.ConnectionStrings["Pos_ShoeRetail_.Properties.Settings.Setting"].ConnectionString;
+        SqlConnection con = new SqlConnection(conString);
+
         public Login()
         {
             InitializeComponent();

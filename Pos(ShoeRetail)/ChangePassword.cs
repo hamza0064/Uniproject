@@ -8,12 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace Pos_ShoeRetail_
 {
     public partial class ChangePassword : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
+        static string conString = ConfigurationManager.ConnectionStrings["Pos_ShoeRetail_.Properties.Settings.Setting"].ConnectionString;
+        SqlConnection con = new SqlConnection(conString);
         public ChangePassword()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace Pos_ShoeRetail_
         }
         public void fillbox()
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
+            
 
             string Qry = "select * from users";
             SqlCommand cmd = new SqlCommand(Qry, con);
@@ -40,7 +42,8 @@ namespace Pos_ShoeRetail_
                     string username = myreader.GetString(1);
                     fill_box.Items.Add(username);
                 }
-               
+
+                con.Close();
             }
             catch (Exception ex)
             {
@@ -50,7 +53,7 @@ namespace Pos_ShoeRetail_
         }
         private void fill_box_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
+            
 
             string Qry = "select * from users where username='" + fill_box.Text + "';";
             SqlCommand cmd = new SqlCommand(Qry, con);
@@ -66,6 +69,7 @@ namespace Pos_ShoeRetail_
                     txt_username.Text = username;
                     txt_password.Text = password;
                 }
+                con.Close();
                 
             }
             catch (Exception ex)

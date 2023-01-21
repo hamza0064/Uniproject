@@ -82,3 +82,9 @@ C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\obj\Debug\dje\Pos(Sho
 C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\obj\Debug\Pos(ShoeRetail).csproj.CopyComplete
 C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\obj\Debug\Pos(ShoeRetail).exe
 C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\obj\Debug\Pos(ShoeRetail).pdb
+C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\bin\Debug\ShoeRetail(Pos).mdf
+C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\bin\Debug\ShoeRetail(Pos)_log.ldf
+C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\bin\Debug\Pos(ShoeRetail).exe.manifest
+C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\bin\Debug\Pos(ShoeRetail).application
+C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\obj\Debug\Pos(ShoeRetail).exe.manifest
+C:\Users\Anonymous\Desktop\Pos(ShoeRetail)\Pos(ShoeRetail)\obj\Debug\Pos(ShoeRetail).application
