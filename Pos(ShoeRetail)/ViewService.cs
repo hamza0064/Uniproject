@@ -8,20 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
-using System.Configuration;
->>>>>>> origin/main
 
 namespace Pos_ShoeRetail_
 {
     public partial class ViewService : Form
     {
-<<<<<<< HEAD
-=======
-        static string conString = ConfigurationManager.ConnectionStrings["Pos_ShoeRetail_.Properties.Settings.Setting"].ConnectionString;
-        SqlConnection con = new SqlConnection(conString);
->>>>>>> origin/main
         public ViewService()
         {
             InitializeComponent();
@@ -29,10 +20,7 @@ namespace Pos_ShoeRetail_
 
         private void txt_Search_TextChanged(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
-=======
->>>>>>> origin/main
             string Qry = "select * from [dbo].[Customers] where CustomerID='" + txt_Search.Text + "'";
             SqlCommand cmd = new SqlCommand(Qry, con);
             SqlDataReader myreader;
@@ -71,10 +59,6 @@ namespace Pos_ShoeRetail_
                     txt_deliverdate.Text = ddate;
 
                 }
-<<<<<<< HEAD
-=======
-                con.Close();
->>>>>>> origin/main
 
             }
             catch (Exception ex)

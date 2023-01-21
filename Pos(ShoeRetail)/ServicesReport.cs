@@ -8,28 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
-using System.Configuration;
->>>>>>> origin/main
 
 namespace Pos_ShoeRetail_
 {
     public partial class ServicesReport : Form
     {
-<<<<<<< HEAD
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
 
         public ServicesReport()
         {
             
-=======
-        static string conString = ConfigurationManager.ConnectionStrings["Pos_ShoeRetail_.Properties.Settings.Setting"].ConnectionString;
-        SqlConnection con = new SqlConnection(conString);
-
-        public ServicesReport()
-        {
->>>>>>> origin/main
             InitializeComponent();
             BindGrid();
         }

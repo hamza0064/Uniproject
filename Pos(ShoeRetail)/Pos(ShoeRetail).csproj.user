@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-<<<<<<< HEAD
     <PublishUrlHistory />
-=======
-    <PublishUrlHistory>C:\Users\Anonymous\Desktop\WebSite\|publish\</PublishUrlHistory>
->>>>>>> origin/main
     <InstallUrlHistory />
     <SupportUrlHistory />
     <UpdateUrlHistory />
@@ -14,10 +10,4 @@
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
   </PropertyGroup>
-<<<<<<< HEAD
-=======
-  <PropertyGroup>
-    <EnableSecurityDebugging>false</EnableSecurityDebugging>
-  </PropertyGroup>
->>>>>>> origin/main
 </Project>

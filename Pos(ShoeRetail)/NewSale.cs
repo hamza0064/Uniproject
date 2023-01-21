@@ -8,22 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
-=======
-using System.Configuration;
->>>>>>> origin/main
 
 namespace Pos_ShoeRetail_
 {
     public partial class NewSale : Form
     {
-<<<<<<< HEAD
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
-=======
-
-        static string conString = ConfigurationManager.ConnectionStrings["Pos_ShoeRetail_.Properties.Settings.Setting"].ConnectionString;
-        SqlConnection con = new SqlConnection(conString);
->>>>>>> origin/main
         public NewSale()
         {
             InitializeComponent();
@@ -31,23 +21,13 @@ namespace Pos_ShoeRetail_
 
         private void txt_Search_TextChanged(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-LNIKLOR;Initial Catalog=ShoeRetail(Pos);Integrated Security=True");
-=======
->>>>>>> origin/main
             string Qry = "select * from Product where ProductID='" + txt_Search.Text + "'";
             SqlCommand cmd = new SqlCommand(Qry, con);
             SqlDataReader myreader;
             try
             {
-<<<<<<< HEAD
                 con.Open();
-=======
-               
-                con.Open();
-                
-                
->>>>>>> origin/main
                 myreader = cmd.ExecuteReader();
                 while (myreader.Read())
                 {
@@ -67,10 +47,6 @@ namespace Pos_ShoeRetail_
                     txt_price.Text = Price.ToString(); ;
 
                 }
-<<<<<<< HEAD
-=======
-                con.Close();
->>>>>>> origin/main
 
             }
             catch (Exception ex)
@@ -90,10 +66,6 @@ namespace Pos_ShoeRetail_
             cmd.Parameters.AddWithValue("@date", txt_date.Text.ToString());
             cmd.Parameters.AddWithValue("@size", txt_Size.Text);
             cmd.Parameters.AddWithValue("@brand", txt_brand.Text.ToString());
-<<<<<<< HEAD
-=======
-           
->>>>>>> origin/main
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
