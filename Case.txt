@@ -1,1 +1,8 @@
-Cas1
+Sales Reporting: On the surface, most POS systems enable you to look at your sales. The difference lies in how those numbers are presented, the ease at which data can be accessed and how much detail you get. 
+• Generate detailed sales reports (based on product, hour, employee, total cost of items sold, total retail amount, net profit, profit percentage, gross margin) 
+• Provide quick snapshots and charts on your store’s sales performance 
+
+Inventory Management: One of the most important functions of a POS system, inventory management, at its very essence, keeps track of all products so you know when it’s time to order/or not order specific products. 
+• Manage your stock by creating product variations (size, color) 
+• Identify pieces of inventory with a unique serial number 
+• Consolidating purchases and orders in one order 
