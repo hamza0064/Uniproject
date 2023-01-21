@@ -1,0 +1,6 @@
+Customer Management: Building strong relationships with your customers will lead to repeat business. A POS should have customer relationship management (CRM) to track all customer data. 
+• Attach a sale/transaction to a customer 
+• Keep track of your customers’ purchase history 
+• Capture customer information such as name, age, birthday, phone number and email address 
+• Use email marketing to keep in touch with them 
+• More advanced systems will have a built-in loyalty program
